@@ -1,0 +1,16 @@
+﻿@*@model IEnumerable<LinqSchool.ViewModels.StudentViewModel>
+
+<dt class="col-sm-2">
+    <h6>Students</h6>
+</dt>
+@foreach (var item in Model)
+{
+
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => item.SFirstName)
+    </dd>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => item.SLastName)
+    </dd>
+
+}*@
